@@ -1,14 +1,11 @@
-document.getElementById("notactive").onmouseover = function() {active()};
-document.getElementById("notactive").onmouseout = function() {notActive()};
-document.getElementById("notactive2").onmouseover = function() {active()};
-document.getElementById("notactive2").onmouseout = function() {notActive()};
-document.getElementById("notactive3").onmouseover = function() {active()};
-document.getElementById("notactive3").onmouseout = function() {notActive()};
+document.getElementById("notactive").onmouseover = function() {active()}; document.getElementById("notactive").onmouseout = function() {notActive()};
+document.getElementById("notactive2").onmouseover = function() {active()}; document.getElementById("notactive2").onmouseout = function() {notActive()};
+document.getElementById("notactive3").onmouseover = function() {active()}; document.getElementById("notactive3").onmouseout = function() {notActive()};
 function active() {
-    document.getElementById("active").style.borderBottom = "none";
+    Object.assign(document.getElementById("active").style,{borderBottom: "none", color: "darkgrey"});
 }
 function notActive() {
-    document.getElementById("active").style.borderBottom = "2px solid red"
+    Object.assign(document.getElementById("active").style,{borderBottom: "2px solid red", color: "white"});
 }
 active();
 notActive();
