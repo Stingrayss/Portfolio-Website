@@ -108,24 +108,37 @@ h1 {
 #homecontent {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     box-shadow: inset 0px 0px 1em black;
+    background-image: url(images/patterns/leaves-pattern.png);
+    flex-wrap: wrap;
 }
+#box1, #box2 {
+    width: 33%;
+    margin: 0px 15px;
+    height: 35em;
+    background: white;
+}
+
 #homecontent > h2 {
     font-size: 3em;
     color: black;
     text-shadow: 3px 3px 4px grey;
+    width: 100%;
+    text-align: center;
 }
 #homecontent > div {
-    background: none;
     border: 2px solid grey;
     cursor: pointer;
-    padding: 16px;
-    width: 50%;
     text-align: center;
     color: black;
     box-shadow: 3px 3px 14px #ccc;
+}
+#box3 {
+    width: 50%;
+    border-radius: 25px;
+    background: cyan;
 }
 #homecontent > div:hover {
     background-color: darkgrey;
