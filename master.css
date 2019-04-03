@@ -18,7 +18,8 @@ ul {
     font-size: 1.3em;
     margin: 0px;
     width: 99%;
-    box-shadow: 0px 0px 10px black;;
+    box-shadow: 0px 0px 10px black;
+    z-index: 2;
 }
 li {
     margin: 0px 16px;
@@ -27,13 +28,24 @@ li:first-child {
     justify-content: flex-start;
     margin-right: auto;
 }
+li:last-child a {
+    border: 2px solid grey;
+    padding: 6px 20px;
+}
+li:last-child > a:hover {
+    background: rgba(70, 70, 70);
+    color: white;
+    border-bottom: 2px solid grey;
+    transition-duration: 0.3s;
+}
 a {
     text-decoration: none;
     color: grey;
 }
-a:hover {
+li > a:hover {
     border-bottom: 2px solid red;
     color: white;
+    transition-duration: 0.3s;
 }
 #logo:hover {
     border-bottom: none;
@@ -77,14 +89,33 @@ button:after {
 }
 button:hover {
     background-color: rgba(40, 40, 40);
+    transition-duration: 0.3s;
 }
-
+#credit {
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+#credit a {
+    margin: 0px 5px;
+}
+#credit > a:hover {
+    color: rgba(150, 150, 150);
+}
+#twitter:hover {
+    background-image: url(images/twitterhover.png);
+    cursor: pointer;
+}
+#linkedin:hover {
+    background-image: url(images/linkedinhover.png);
+    cursor: pointer;
+}
 /* Page Specific Styling */
 
 /* Home */
 
 #header {
-    background-image: url(images/unspecified.jpeg);
+    background-image: url(images/laptop.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -113,14 +144,40 @@ h1 {
     box-shadow: inset 0px 0px 1em black;
     background-image: url(images/patterns/leaves-pattern.png);
     flex-wrap: wrap;
+    z-index: 1;
 }
 #box1, #box2 {
-    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2em;
+    text-shadow: 2px 2px 1px black;
+    width: 550px;
     margin: 0px 15px;
-    height: 35em;
+    height: 480px;
     background: white;
+    opacity: 0.8;
+    border: 2px solid grey;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 14px #ccc;
 }
-
+#box1:hover, #box2:hover {
+    opacity: 1;
+    border: 2px solid grey;
+    transition-duration: 0.3s;
+}
+#box1 {
+    background-image: url(images/unspecified.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#box2 {
+    background-image: url(images/codeheader.jpeg);
+    background-position: center;
+    background-size: cover;
+}
 #homecontent > h2 {
     font-size: 3em;
     color: black;
@@ -128,18 +185,18 @@ h1 {
     width: 100%;
     text-align: center;
 }
-#homecontent > div {
+#box3 {
+    width: 50%;
     border: 2px solid grey;
+    border-radius: 15px;
+    background: rgb(200, 200, 200);
     cursor: pointer;
     text-align: center;
     color: black;
+    text-shadow: 1px 1px 0px white;
     box-shadow: 3px 3px 14px #ccc;
 }
-#box3 {
-    width: 50%;
-    border-radius: 25px;
-    background: cyan;
-}
-#homecontent > div:hover {
-    background-color: darkgrey;
+#box3:hover {
+    background: rgb(180, 180, 180);
+    transition-duration: 0.3s;
 }
