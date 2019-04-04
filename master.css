@@ -200,3 +200,88 @@ h1 {
     background: rgb(180, 180, 180);
     transition-duration: 0.3s;
 }
+
+/* About Me */
+
+#secone {
+    background-image: url(images/patterns/leaves-pattern.png);
+    box-shadow: inset 0px 0px 1em black;
+}
+#aboutheader {
+    background-image: url(images/unspecified.jpeg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 14px #ccc;
+    background: white;
+}
+#one img {
+    margin-bottom: -3px;
+}
+#two {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+#coltwo {
+    display: flex;
+    width: 48%;
+    background: white;
+    box-shadow: 3px 3px 14px #ccc;
+}
+#one p {
+    margin: 0 auto;
+    width: 88%;
+    font-size: 1.2em;
+}
+#one h2 {
+    margin: auto;
+    width: 90%;
+}
+#two p {
+    margin: 0 auto;
+    width: 88%;
+    font-size: 1.05em;
+    text-align: 
+}
+#two h2 {
+    text-align: center;
+}
+#html, #css, #js {
+    background: grey;
+    border: 09px solid grey;
+    width: 90%;
+    color: white;
+    margin: 10px 0px;
+}
+#css {
+    width: 80%;
+}
+#js {
+    width: 30%;
+}
+#skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#skills p {
+    width: 100%;
+    font-size: 1em;
+}
