@@ -128,7 +128,7 @@ button:hover {
 h1 {
     font-size: 5em;
     color: white;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 1px 1px 3px black;
 }
 #header > h2 {
     margin-top: 0;
@@ -192,13 +192,19 @@ h1 {
     background: rgb(200, 200, 200);
     cursor: pointer;
     text-align: center;
+<<<<<<< HEAD
+    color: white;
+    text-shadow: 1px 1px 1px black;
+=======
     color: black;
     text-shadow: 1px 1px 0px white;
+>>>>>>> 33c219393fb83e71ff9e918005672f0560e9e171
     box-shadow: 3px 3px 14px #ccc;
 }
 #box3:hover {
     background: rgb(180, 180, 180);
     transition-duration: 0.3s;
+<<<<<<< HEAD
 }
 
 /* About Me */
@@ -284,4 +290,177 @@ h1 {
 #skills p {
     width: 100%;
     font-size: 1em;
+}
+
+/* Portfolio Page */
+
+/* Contact Page */
+#contact {
+    background-color: rgb(150, 150, 150);
+}
+#contactcontent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#contactul {
+    box-shadow: 0px 0px 2px black;
+}
+#contactheader {
+    height: 16em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 0px;
+    flex-wrap: wrap;
+}
+#contactheader h2 {
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+#information {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 100px;
+}
+#information div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2px;
+}
+#information p {
+    margin: 0 auto;
+}
+#contentsocial {
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 50px;
+}
+legend {
+    margin-right: auto;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+input[type=submit] {
+    width: 25%;
+    border: none;
+    padding: 16px;
+    border-radius: 5px;
+    background: rgb(200, 200, 200);
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+input[type=submit]:hover {
+    background: rgb(180, 180, 180);
+    transition-duration: 0.3s;
+=======
+}
+
+/* About Me */
+
+#secone {
+    background-image: url(images/patterns/leaves-pattern.png);
+    box-shadow: inset 0px 0px 1em black;
+}
+#aboutheader {
+    background-image: url(images/unspecified.jpeg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 14px #ccc;
+    background: white;
+}
+#one img {
+    margin-bottom: -3px;
+}
+#two {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+#coltwo {
+    display: flex;
+    width: 48%;
+    background: white;
+    box-shadow: 3px 3px 14px #ccc;
+}
+#one p {
+    margin: 0 auto;
+    width: 88%;
+    font-size: 1.2em;
+}
+#one h2 {
+    margin: auto;
+    width: 90%;
+}
+#two p {
+    margin: 0 auto;
+    width: 88%;
+    font-size: 1.05em;
+    text-align: 
+}
+#two h2 {
+    text-align: center;
+}
+#html, #css, #js {
+    background: grey;
+    border: 09px solid grey;
+    width: 90%;
+    color: white;
+    margin: 10px 0px;
+}
+#css {
+    width: 80%;
+}
+#js {
+    width: 30%;
+}
+#skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#skills p {
+    width: 100%;
+    font-size: 1em;
+>>>>>>> 33c219393fb83e71ff9e918005672f0560e9e171
 }
