@@ -72,6 +72,6 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".text > .wrap { border-right: 0.08em solid #fff}";
+        css.innerHTML = ".text > .wrap { border-right: 0.08em solid #bbb}";
         document.body.appendChild(css);
     };
