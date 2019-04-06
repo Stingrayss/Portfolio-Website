@@ -11,6 +11,7 @@ body {
 ul {
     list-style: none;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     background: rgba(47, 47, 47);
@@ -18,25 +19,8 @@ ul {
     font-size: 1.3em;
     margin: 0px;
     width: 99%;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 5px black;
     z-index: 2;
-}
-li {
-    margin: 0px 16px;
-}
-li:first-child {
-    justify-content: flex-start;
-    margin-right: auto;
-}
-li:last-child a {
-    border: 2px solid grey;
-    padding: 6px 20px;
-}
-li:last-child > a:hover {
-    background: rgba(70, 70, 70);
-    color: white;
-    border-bottom: 2px solid grey;
-    transition-duration: 0.3s;
 }
 a {
     text-decoration: none;
@@ -47,7 +31,7 @@ li > a:hover {
     color: white;
     transition-duration: 0.3s;
 }
-#logo:hover {
+.logo:hover {
     border-bottom: none;
 }
 footer {
@@ -58,7 +42,7 @@ footer {
 footer > hr {
     width: 15%;
 }
-#footerdiv {
+.footerdiv {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -66,7 +50,7 @@ footer > hr {
     padding: 16px 0px;
     background: rgba(47, 47, 47);
 }
-button {
+.btn {
     height: 5vh;
     background: none;
     border: 1px solid grey;
@@ -75,7 +59,7 @@ button {
     color: grey;
     position: absolute;
 }
-button:after {
+.btn:after {
     content: '';
     display: inline-block;
     margin-left: 8px;
@@ -91,22 +75,22 @@ button:hover {
     background-color: rgba(40, 40, 40);
     transition-duration: 0.3s;
 }
-#credit {
+.credit {
     display: flex;
     justify-content: center;
     color: grey;
 }
-#credit a {
+.credit a {
     margin: 0px 5px;
 }
-#credit > a:hover {
+.credit > a:hover {
     color: rgba(150, 150, 150);
 }
-#twitter:hover {
+.twitter:hover {
     background-image: url(images/twitterhover.png);
     cursor: pointer;
 }
-#linkedin:hover {
+.linkedin:hover {
     background-image: url(images/linkedinhover.png);
     cursor: pointer;
 }
@@ -114,7 +98,7 @@ button:hover {
 
 /* Home */
 
-#header {
+.header {
     background-image: url(images/laptop.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -129,14 +113,16 @@ h1 {
     font-size: 5em;
     color: white;
     text-shadow: 1px 1px 3px black;
+
 }
-#header > h2 {
+.header > h2 {
     margin-top: 0;
     font-size: 3em;
     color: white;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 1px 1px 3px black;
+    font-weight: 400
 }
-#homecontent {
+.homecontent {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -146,12 +132,12 @@ h1 {
     flex-wrap: wrap;
     z-index: 1;
 }
-#box1, #box2 {
+.box1, .box2 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     font-size: 2em;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 3px black;
     width: 550px;
     margin: 0px 15px;
     height: 480px;
@@ -162,58 +148,40 @@ h1 {
     text-align: center;
     color: white;
     box-shadow: 3px 3px 14px #ccc;
+    padding: 2em;
+    margin-bottom: 1em;
 }
-#box1:hover, #box2:hover {
+.box1:hover, .box2:hover {
     opacity: 1;
     border: 2px solid grey;
     transition-duration: 0.3s;
 }
-#box1 {
+.box1 {
     background-image: url(images/unspecified.jpeg);
     background-position: center;
     background-size: cover;
 }
-#box2 {
+.box2 {
     background-image: url(images/codeheader.jpeg);
     background-position: center;
     background-size: cover;
 }
-#homecontent > h2 {
+.homecontent > h2 {
     font-size: 3em;
     color: black;
-    text-shadow: 3px 3px 4px grey;
+    text-shadow: 2px 2px 3px grey;
     width: 100%;
     text-align: center;
-}
-#box3 {
-    width: 50%;
-    border: 2px solid grey;
-    border-radius: 15px;
-    background: rgb(200, 200, 200);
-    cursor: pointer;
-    text-align: center;
-<<<<<<< HEAD
-    color: white;
-    text-shadow: 1px 1px 1px black;
-=======
-    color: black;
-    text-shadow: 1px 1px 0px white;
->>>>>>> 33c219393fb83e71ff9e918005672f0560e9e171
-    box-shadow: 3px 3px 14px #ccc;
-}
-#box3:hover {
-    background: rgb(180, 180, 180);
-    transition-duration: 0.3s;
-<<<<<<< HEAD
+    font-weight: 500;
 }
 
 /* About Me */
 
-#secone {
+.secone {
     background-image: url(images/patterns/leaves-pattern.png);
     box-shadow: inset 0px 0px 1em black;
 }
-#aboutheader {
+.aboutheader {
     background-image: url(images/unspecified.jpeg);
     background-attachment: fixed;
     background-position: bottom;
@@ -225,7 +193,7 @@ h1 {
     align-items: center;
 }
 
-#one {
+.one {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -234,60 +202,60 @@ h1 {
     box-shadow: 3px 3px 14px #ccc;
     background: white;
 }
-#one img {
+.one img {
     margin-bottom: -3px;
 }
-#two {
+.two {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 70%;
     margin: 0 auto;
 }
-#coltwo {
+.coltwo {
     display: flex;
     width: 48%;
     background: white;
     box-shadow: 3px 3px 14px #ccc;
 }
-#one p {
+.one p {
     margin: 0 auto;
     width: 88%;
     font-size: 1.2em;
 }
-#one h2 {
+.one h2 {
     margin: auto;
     width: 90%;
 }
-#two p {
+.two p {
     margin: 0 auto;
     width: 88%;
     font-size: 1.05em;
     text-align: 
 }
-#two h2 {
+.two h2 {
     text-align: center;
 }
-#html, #css, #js {
+.html, .css, .js {
     background: grey;
     border: 09px solid grey;
     width: 90%;
     color: white;
     margin: 10px 0px;
 }
-#css {
+.css {
     width: 80%;
 }
-#js {
+.js {
     width: 30%;
 }
-#skills {
+.skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
-#skills p {
+.skills p {
     width: 100%;
     font-size: 1em;
 }
@@ -295,172 +263,92 @@ h1 {
 /* Portfolio Page */
 
 /* Contact Page */
-#contact {
-    background-color: rgb(150, 150, 150);
+.contacth2 {
+    margin: 0;
+    font-weight: 50;
+    font-size: 2em;
 }
-#contactcontent {
+.parallax3 {
+    background-image: url(images/business-connection-contact-955081.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-#contactul {
-    box-shadow: 0px 0px 2px black;
-}
-#contactheader {
-    height: 16em;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    line-height: 0px;
-    flex-wrap: wrap;
-}
-#contactheader h2 {
     color: white;
-    text-shadow: 1px 1px 0px black;
-}
-#information {
-    width: 25%;
-    display: flex;
+    text-shadow: 2px 2px rgba(0,0,0,.5);
     flex-direction: column;
-    text-align: center;
-    margin: 50px 100px;
-}
-#information div {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-left: 2px;
+    padding-top: 12em;
+    padding-bottom: 11em;
 }
-#information p {
-    margin: 0 auto;
+.contact div p {
+	background: rgba(180,180,180,0.5);
+	border-radius: 5px;
+	padding: 20px 50px;
+	text-align: center;
+	color: black;
+	text-shadow: none;
 }
-#contentsocial {
+.limit {
+	max-width: 750px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.col {
+	display: flex;
+	flex-direction: column;
+	width: 48.25%;
+}
+.row {
     display: flex;
-    justify-content: center;
-    margin: 0px 20px;
+    align-content: center;
+    justify-content: space-between;
+	width: 100%;
+}
+form {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
 }
 
-form {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0px 50px;
-}
-legend {
-    margin-right: auto;
-    color: white;
-    text-shadow: 1px 1px 0px black;
-}
-input[type=text], input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    resize: vertical;
+input, textarea {
+	background: rgba(180, 180, 180, 0.5);
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	margin: 10px 0;
+	height: 100%;
+	font-family: Open Sans, sans-serif;
+	box-sizing: border-box;
 }
 input[type=submit] {
-    width: 25%;
-    border: none;
-    padding: 16px;
-    border-radius: 5px;
-    background: rgb(200, 200, 200);
-    cursor: pointer;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 1px black;
+	background: #262628;
+	width: 25%;
+	color: white;
+	font-size: 1em;
 }
 input[type=submit]:hover {
-    background: rgb(180, 180, 180);
-    transition-duration: 0.3s;
-=======
+    cursor: pointer;
+    background: rgb(55,55,55);
 }
-
-/* About Me */
-
-#secone {
-    background-image: url(images/patterns/leaves-pattern.png);
-    box-shadow: inset 0px 0px 1em black;
+input[type=text]::placeholder, input[type=email]::placeholder, textarea[type=text]::placeholder {
+    color: black;
+    font-size: 1.1em;
+    opacity: 1;
 }
-#aboutheader {
-    background-image: url(images/unspecified.jpeg);
-    background-attachment: fixed;
-    background-position: bottom;
-    background-size: cover;
-    height: 35em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+textarea[type=text]::placeholder {
+    opacity: 1;
 }
-
-#one {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 70%;
-    margin: 0 auto;
-    box-shadow: 3px 3px 14px #ccc;
-    background: white;
-}
-#one img {
-    margin-bottom: -3px;
-}
-#two {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 70%;
-    margin: 0 auto;
-}
-#coltwo {
-    display: flex;
-    width: 48%;
-    background: white;
-    box-shadow: 3px 3px 14px #ccc;
-}
-#one p {
-    margin: 0 auto;
-    width: 88%;
-    font-size: 1.2em;
-}
-#one h2 {
-    margin: auto;
-    width: 90%;
-}
-#two p {
-    margin: 0 auto;
-    width: 88%;
-    font-size: 1.05em;
-    text-align: 
-}
-#two h2 {
-    text-align: center;
-}
-#html, #css, #js {
-    background: grey;
-    border: 09px solid grey;
-    width: 90%;
-    color: white;
-    margin: 10px 0px;
-}
-#css {
-    width: 80%;
-}
-#js {
-    width: 30%;
-}
-#skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-}
-#skills p {
-    width: 100%;
-    font-size: 1em;
->>>>>>> 33c219393fb83e71ff9e918005672f0560e9e171
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 4em;
+    }
+    .header > h2 {
+        font-size: 2em;
+    }
+    .footerdiv {
+        margin: 0px -100px;
+    }
 }
