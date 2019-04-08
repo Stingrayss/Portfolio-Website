@@ -11,20 +11,28 @@ body {
 ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     position: fixed;
     background: rgba(47, 47, 47);
     padding: 12px;
     font-size: 1.3em;
-    margin: 0px;
+    margin: 0;
     width: 99%;
-    box-shadow: 0px 0px 5px black;
+    border-bottom: 1px solid black;
     z-index: 2;
 }
 a {
     text-decoration: none;
     color: grey;
+}
+li > a {
+    margin: 0px 20px;
+}
+li:last-child {
+    margin-right: 10px;
+}
+li:first-child {
+    margin-right: auto;
 }
 li > a:hover {
     border-bottom: 2px solid red;
@@ -32,7 +40,7 @@ li > a:hover {
     transition-duration: 0.3s;
 }
 .logo:hover {
-    border-bottom: none;
+    border-bottom: 2px solid rgb(47, 47, 47);
 }
 footer {
     display: flex;
@@ -95,7 +103,6 @@ button:hover {
     cursor: pointer;
 }
 /* Page Specific Styling */
-
 /* Home */
 
 .header {
@@ -127,7 +134,6 @@ h1 {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    box-shadow: inset 0px 0px 1em black;
     background-image: url(images/patterns/leaves-pattern.png);
     flex-wrap: wrap;
     z-index: 1;
@@ -179,7 +185,6 @@ h1 {
 
 .secone {
     background-image: url(images/patterns/leaves-pattern.png);
-    box-shadow: inset 0px 0px 1em black;
 }
 .aboutheader {
     background-image: url(images/unspecified.jpeg);
@@ -238,10 +243,14 @@ h1 {
 }
 .html, .css, .js {
     background: grey;
-    border: 09px solid grey;
+    border: 02px solid black;
+    border-radius: 5px;
     width: 90%;
     color: white;
+    padding: 08px;
     margin: 10px 0px;
+    border-left: 2px solid white;
+    margin-left: -2px;
 }
 .css {
     width: 80%;
@@ -262,7 +271,75 @@ h1 {
 
 /* Portfolio Page */
 
-/* Contact Page */
+.portheader {
+    background-image: url(images/codeheader.jpeg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    height: 20em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.portlimit {
+    width: 80%;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.portlimit > h1 {
+    font-size: 3.5em;
+    color: black;
+    text-shadow: none;
+    margin: 0;
+    font-weight: 100;
+    margin: 30px 0px
+}
+.portlimit > h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 200;
+}
+.portcontent {
+    background-image: url(images/patterns/leaves-pattern.png);
+}
+.portrow {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.proj1 a, .proj2 a, .proj3 a, .proj4 a, .proj5 a{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0px 20px 20px 0px;
+    text-align: center;
+    color: black;
+}
+.proj1:hover .middle1, .proj2:hover .middle2, .proj3:hover .middle3, .proj4:hover .middle4, .proj5:hover .middle5 {
+    opacity: 1;
+    cursor: pointer;
+}
+.proj1:hover img, .proj2:hover img, .proj3:hover img, .proj4:hover img, .proj5:hover img {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+.middle1, .middle2, .middle3, .middle4, .middle5 {
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+}
+
+/* Contact Part */
 .contacth2 {
     margin: 0;
     font-weight: 50;
@@ -332,6 +409,7 @@ input[type=submit] {
 input[type=submit]:hover {
     cursor: pointer;
     background: rgb(55,55,55);
+    transition-duration: 0.3s;
 }
 input[type=text]::placeholder, input[type=email]::placeholder, textarea[type=text]::placeholder {
     color: black;
