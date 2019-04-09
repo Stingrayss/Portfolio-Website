@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
 }
-ul {
+.nav {
     list-style: none;
     display: flex;
     align-items: center;
@@ -25,16 +25,16 @@ a {
     text-decoration: none;
     color: grey;
 }
-li > a {
+.nav > li > a {
     margin: 0px 20px;
 }
-li:last-child {
+.nav > li:last-child {
     margin-right: 10px;
 }
-li:first-child {
+.nav > li:first-child {
     margin-right: auto;
 }
-li > a:hover {
+.nav > li > a:hover {
     border-bottom: 2px solid red;
     color: white;
     transition-duration: 0.3s;
@@ -59,7 +59,6 @@ footer > hr {
     background: rgba(47, 47, 47);
 }
 .btn {
-    height: 5vh;
     background: none;
     border: 1px solid grey;
     cursor: pointer;
@@ -141,12 +140,12 @@ h1 {
 .box1, .box2 {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     font-size: 2em;
     text-shadow: 2px 2px 3px black;
-    width: 550px;
+    width: 700px;
     margin: 0px 15px;
-    height: 480px;
+    height: 625px;
     background: white;
     opacity: 0.8;
     border: 2px solid grey;
@@ -154,7 +153,6 @@ h1 {
     text-align: center;
     color: white;
     box-shadow: 3px 3px 14px #ccc;
-    padding: 2em;
     margin-bottom: 1em;
 }
 .box1:hover, .box2:hover {
@@ -189,7 +187,7 @@ h1 {
 .aboutheader {
     background-image: url(images/unspecified.jpeg);
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     height: 35em;
     display: flex;
@@ -223,6 +221,11 @@ h1 {
     background: white;
     box-shadow: 3px 3px 14px #ccc;
 }
+.coltwo img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 .one p {
     margin: 0 auto;
     width: 88%;
@@ -236,7 +239,6 @@ h1 {
     margin: 0 auto;
     width: 88%;
     font-size: 1.05em;
-    text-align: 
 }
 .two h2 {
     text-align: center;
@@ -244,8 +246,8 @@ h1 {
 .html, .css, .js {
     background: grey;
     border: 02px solid black;
-    border-radius: 5px;
-    width: 90%;
+    border-radius: 4px;
+    width: 85%;
     color: white;
     padding: 08px;
     margin: 10px 0px;
@@ -253,10 +255,10 @@ h1 {
     margin-left: -2px;
 }
 .css {
-    width: 80%;
+    width: 75%;
 }
 .js {
-    width: 30%;
+    width: 25%;
 }
 .skills {
     display: flex;
@@ -290,20 +292,23 @@ h1 {
 }
 .portlimit > h1 {
     font-size: 3.5em;
-    color: black;
+    color: white;
     text-shadow: none;
     margin: 0;
     font-weight: 100;
-    margin: 30px 0px
+    margin: 30px 0px;
+    text-shadow: 2px 2px 3px black;
 }
 .portlimit > h2 {
     margin: 0;
     font-size: 1.5em;
     color: white;
     font-weight: 200;
+    text-shadow: 2px 2px 3px black;
 }
 .portcontent {
     background-image: url(images/patterns/leaves-pattern.png);
+    padding: 45px;
 }
 .portrow {
     display: flex;
@@ -338,11 +343,143 @@ h1 {
     z-index: 2;
     position: absolute;
 }
+.resume {
+    background-image: url(images/calmlaptop2.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 3px black;
+}
+.resumelimit > a {
+    color: white;
+    background: none;
+    border: 2px solid white;
+    padding: 16px 32px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.5em;
+    text-shadow: none;
+}
+.resumelimit > a:hover {
+    color: black;
+    background: white;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+.resumecontent {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+.resumerow {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 45px;
+    width: 75%;
+    margin-left: auto;
+}
+.resumerow h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+    width: 0%;
+    color: rgba(26, 26, 26, 0.9);
+}
+.techs h3, .edu h3, .act h3{
+    font-size: 1em;
+    width: 100%;
+}
+.edu p, .act p {
+    color: rgb(80, 80, 80);
+}
+.resumeul {
+    line-height: 2;
+    color: rgb(80, 80, 80);
+}
+.techs, .edu, .act {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 15em;
+    width: 50%;
+}
+.edu {
+    padding-left: 17.5em;
+}
+.act {
+    padding-left: 6.5em;
+}
+.letters {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+}
+.letters h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+    color: rgba(26, 26, 26, 0.9);
+}
+.letterbtn {
+    color: #272727;
+    background: none;
+    border: 2px solid #272727;
+    padding: 16px 32px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    margin: 10px 10px;
+}
+.letterbtn:hover {
+    color: white;
+    background: #272727;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+/* Detailed Portfolio */
+.detailedheader {
+    background: #272727;
+    color: white;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-flow: row wrap;
+}
+.detailedcontent {
+    width: 60%;
+}
+.project {
+    width: 100%;
+    padding-top: 130px;
+}
+.projectdesc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 45px 0px 45px 0px;
+}
+.brief, .process, .result {
+    width: 30%;
+}
+.detailedpicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 90px;
+}
 
 /* Contact Part */
 .contacth2 {
     margin: 0;
-    font-weight: 50;
+    font-weight: 100;
     font-size: 2em;
 }
 .parallax3 {
@@ -416,17 +553,173 @@ input[type=text]::placeholder, input[type=email]::placeholder, textarea[type=tex
     font-size: 1.1em;
     opacity: 1;
 }
-textarea[type=text]::placeholder {
+textarea::placeholder {
     opacity: 1;
+}
+
+@media screen and (max-width: 1500px) {
+    .box1, .box2 {
+        width: 400px;
+        height: 375px;
+    }
+    .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img {
+        width: 400px;
+        height: 400px;
+    }
+    .two {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    .coltwo {
+        width: 72%;
+    }
+    .coltwo img {
+        width: 100%;
+    }
+    .techs, .edu, .act {
+        width: 80%;
+        padding-left: 5em;
+    }
+    .edu {
+        width: 90%;
+    }
+    .detailedpicture > video {
+        width: 1000px;
+        height: 800px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header {
+        height: 100vh;
+    }
+    .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img {
+        margin: 0px -20px 0px 0px;
+    }
+    .two {
+        width: 90%;
+    }
+    .coltwo {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .coltwo img {
+        width: 100%;
+    }
+    .html {
+        width: 80%;
+    }
+    .css {
+        width: 65%;
+    }
+    .js {
+        width: 25%;
+    }
+    .one {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .one img {
+        width: 100%;
+        padding-top: 25px;
+    }
+    .one p {
+        margin-top: -10px;
+    }
+    input[type=submit] {
+        width: 30%;
+    }
+    .techs, .edu, .act {
+        padding-left: 0;
+        width: 100%;
+    }
+    .edu {
+        width: 100%;
+    }
+    .detailedcontent {
+        width: 80%;
+    }
+    .brief, .process, .result {
+        width: 100%;
+    }
+    .detailedpicture > video {
+        width: 600px;
+        height: 400px;
+    }
 }
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 4em;
+    }
+    .header {
+        height: 100vh;
     }
     .header > h2 {
         font-size: 2em;
     }
     .footerdiv {
         margin: 0px -100px;
+    }
+    .box1, .box2 {
+        width: 300px;
+        height: 275px;
+    }
+    .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img {
+        width: 350px;
+        height: 350px;
+        margin: 0px -20px 0px 0px;
+    }
+    .one {
+        width: 90%;
+    }
+    .two {
+        width: 90%;
+    }
+    .coltwo {
+        width: 100%;
+    }
+    .html {
+        width: 75%;
+    }
+    .css {
+        width: 60%;
+    }
+    .js {
+        width: 30%;
+    }
+    .limit {
+        width: 95%;
+    }
+    input[type=submit] {
+        width: 40%;
+    }
+    textarea {
+        font-size: 1.3em;
+    }
+    input[type=text] {
+        font-size: 1.3em;
+    }
+    .row p {
+        font-size: 1.3em;
+    }
+    .resumerow {
+        font-size: 1.2em;
+    }
+    .letters h2 {
+        text-align: center;
+    }
+    .nav {
+        font-size: 0.86em;
+    }
+    .detailedcontent {
+        width: 95%;
+    }
+    .detailedpicture > video {
+        width: 400px;
+        height: 300px;
     }
 }

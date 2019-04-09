@@ -9,14 +9,12 @@
   </head>
   <body>
    
-    <nav>
-      <ul>
+      <ul class="nav">
         <li><a href="index.html" class="logo"><img src="images/Stingray%20Logo.png" alt="Logo"></a></li>
         <li><a href="index.html" id="notactive">Home</a></li>
         <li><a href="aboutme.html" id="active">About me</a></li>
         <li><a href="portfolio.html" id="notactive2">Portfolio</a></li>
       </ul>
-    </nav>
     
     <div class="aboutheader">
       <h1>- About Me -</h1>
@@ -27,9 +25,8 @@
   <br>
   <br>
     <div class="one">
-
-        <div><br><br><h2>Hi. I'm Cade.</h2><br><br><p>I am a 17 year-old born and raised in Clovis, California. I am a novice programmer, and am actively trying to progress my knowledge of coding on a day-to-day basis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident veniam modi aliquid fugit impedit distinctio sit recusandae error expedita, ducimus autem vel rerum, dolorem, debitis, minima blanditiis ipsam a veritatis.</p><br></div>
         <div><img src="images/me.jpg" alt="me"></div>
+        <div><br><br><h2>Hi, I'm Cade</h2><br><br><p>I am a 17 year-old born and raised in Clovis, California. I am a novice programmer, and am actively trying to progress my knowledge of coding on a day-to-day basis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident veniam modi aliquid fugit impedit distinctio sit recusandae error expedita, ducimus autem vel rerum, dolorem, debitis, minima blanditiis ipsam a veritatis.</p><br></div>
 
     </div>
     <br>
@@ -37,11 +34,11 @@
     <div class="two">
        
         <div class="coltwo">
-            <div><img class="forest" src="images/ps4.jpeg" alt="forest"><br><br><h2>Hobbies</h2><br><p>In my free time I love to play video games with my friends after school, and talk to them about all the things we enjoy. We often choose to play Rainbow Six: Siege or League of Legends, and I will sometimes binge tv shows if I do not feel like playing anything. My favorite hobby is listening to music in the background. I like to put on anything relaxing, as this is very calming, and pleasant to listen to.</p><br><br></div>
+            <div><div><img class="forest" src="images/ps4.jpeg" alt="forest"></div><br><h2>Hobbies</h2><br><p>In my free time I love to play video games with my friends after school, and talk to them about all the things we enjoy. We often choose to play Rainbow Six: Siege or League of Legends, and I will sometimes binge tv shows if I do not feel like playing anything. My favorite hobby is listening to music in the background. I like to put on anything relaxing, as this is very calming, and pleasant to listen to.</p><br><br></div>
         </div>
-        
+        <br>
         <div class="coltwo">
-            <div><img class="forest" src="images/skills.jpeg" alt="forest"><br><br><h2>Skills</h2><div class="skills"><div class="html"><p>HTML</p></div>&nbsp; 90%<div class="css"><p>CSS</p></div>&nbsp; 80%<div class="js"><p>JavaScript</p></div>&nbsp; 30%</div><br></div>
+            <div><div><img class="forest" src="images/skills.jpeg" alt="forest"></div><br><h2>Skills</h2><div class="skills"><div class="html"><p>HTML</p></div>&nbsp; 90%<div class="css"><p>CSS</p></div>&nbsp; 80%<div class="js"><p>JavaScript</p></div>&nbsp; 30%</div><br></div>
         </div>
 
     </div>
@@ -56,7 +53,7 @@
 					<div class="row">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus repellendus modi optio amet ad culpa commodi consectetur fugiat vero dolore tempora voluptate minima maiores, nobis asperiores quos. Odit, nesciunt, non.</p>
 					</div>
-					<form action="" id="contact">
+					<form>
 						<div class="row">	
 							<div class="col">
 								<input type="text" id="name" name="name" placeholder="Name">
@@ -64,7 +61,7 @@
 								<input type="text" id="subject" name="subject" placeholder="Subject">
 							</div>
 							<div class="col">
-								<textarea name="message" id="message" form="contact" type="text" style="margin: 10px 0px; height: 160px; width: 363px; resize: vertical;" placeholder="Your Message Here.."></textarea>
+								<textarea name="message" id="message" style="margin: 10px 0px; resize: vertical;" type="text" placeholder="Your Message Here.."></textarea>
 								
 							</div>
 						</div>
@@ -79,26 +76,21 @@
 				</div>
 			</div>
     
-     <footer>
-    <br>
-    <br>
-     <hr>
-     <br>
-      <div class="footerdiv">
-          <img src="images/Stingray%20Logo.png" alt="Logo"> 
-          <div>
-          <a href="https://www.linkedin.com/"><img src="https://img.icons8.com/ios/50/000000/linkedin.png" alt="linkedin" class="linkedin"></a>
-          <a href="https://twitter.com/"><img src="https://img.icons8.com/ios/50/000000/twitter.png" alt="twitter" class="twitter"></a>
-          </div>
-          <button type="button" name="toTop" class="btn" onclick="toTop();">Back to Top</button>
-      </div>
-
-      <div class="credit">
-          <a href="https://icons8.com/icon/447/linkedin">LinkedIn icon by Icons8 </a> | <a href="https://icons8.com/icon/437/twitter">Twitter icon by Icons8</a>
-      </div>
-      
-      
-    </footer>
+	<footer>
+		<br>
+		<br>
+		<hr>
+		<br>
+		<div class="footerdiv">
+			<img alt="Logo" src="images/Stingray%20Logo.png">
+			<div>
+				<a href="https://www.linkedin.com/" target="_blank"><img alt="linkedin" class="linkedin" src="https://img.icons8.com/ios/50/000000/linkedin.png"></a> <a href="https://twitter.com/" target="_blank"><img alt="twitter" class="twitter" src="https://img.icons8.com/ios/50/000000/twitter.png"></a>
+			</div><button class="btn" name="toTop" onclick="toTop();" type="button">Back to Top</button>
+		</div>
+		<div class="credit">
+			<a href="https://icons8.com/icon/447/linkedin" target="_blank">LinkedIn icon by Icons8</a> | <a href="https://icons8.com/icon/437/twitter" target="_blank">Twitter icon by Icons8</a>
+		</div>
+	</footer>
     
     <script src="script.js"></script>
   </body>
