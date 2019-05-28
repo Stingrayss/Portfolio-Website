@@ -195,7 +195,6 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
 .one {
     display: flex;
     flex-direction: row;
@@ -567,6 +566,10 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 1500px) {
+    .box1, .box2 {
+        width: 525px;
+        height: 500px;
+    }
     .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img {
         width: 400px;
         height: 400px;
@@ -594,6 +597,9 @@ textarea::placeholder {
     .detailedpicture > video {
         width: 1000px;
         height: 800px;
+    }
+    .one {
+        width: 80%;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -628,6 +634,7 @@ textarea::placeholder {
     .one {
         display: flex;
         flex-flow: column wrap;
+        text-align: center;
     }
     .one img {
         width: 100%;
@@ -635,6 +642,7 @@ textarea::placeholder {
     }
     .one p {
         margin-top: -10px;
+        width: 90%;
     }
     input[type=submit] {
         width: 30%;
@@ -673,7 +681,6 @@ textarea::placeholder {
     .box1, .box2 {
         width: 450px;
         height: 400px;
-        margin-bottom: 
     }
     .proj1 img, .proj2 img, .proj3 img, .proj4 img, .proj5 img {
         width: 350px;
