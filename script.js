@@ -1,6 +1,5 @@
 document.getElementById("notactive").onmouseover = function() {active()}; document.getElementById("notactive").onmouseout = function() {notActive()};
 document.getElementById("notactive2").onmouseover = function() {active()}; document.getElementById("notactive2").onmouseout = function() {notActive()};
-document.getElementById("notactive3").onmouseover = function() {active()}; document.getElementById("notactive3").onmouseout = function() {notActive()};
 function active() {
     Object.assign(document.getElementById("active").style,{borderBottom: "none", color: "darkgrey"});
 }
@@ -12,7 +11,7 @@ notActive();
 
 //Copied from https://codepen.io/desirecode/pen/MJPJqV (and adjusted to fit my code)
 $(document).ready(function(){ 
-    $('#btn').click(function(){ 
+    $('.btn').click(function(){ 
         $("html, body").animate({ scrollTop: 0 }, 500); 
         return false; 
     }); 
