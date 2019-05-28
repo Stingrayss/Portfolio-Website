@@ -34,13 +34,10 @@ a {
 .nav > li:first-child {
     margin-right: auto;
 }
-.nav > li > a:hover {
+.notactive:hover, .notactive2:hover {
     border-bottom: 2px solid red;
     color: white;
     transition-duration: 0.3s;
-}
-.logo:hover {
-    border-bottom: 2px solid rgb(47, 47, 47);
 }
 footer {
     display: flex;
