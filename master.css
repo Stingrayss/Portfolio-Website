@@ -526,7 +526,7 @@ h1 {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding: 45px;
+    padding: 0px 45px 45px 45px;
 }
 
 .letters h2 {
@@ -592,7 +592,7 @@ h1 {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 90px 90px 50px 90px;
+    padding: 70px 90px 50px 90px;
 }
 
 #menu {
@@ -904,8 +904,8 @@ textarea::placeholder {
     }
 
     .detailedpicture > video {
-        width: 600px;
-        height: 400px;
+        width: 700px;
+        height: 600px;
     }
 }
 
@@ -1001,8 +1001,8 @@ textarea::placeholder {
     }
 
     .detailedpicture > video {
-        width: 400px;
-        height: 300px;
+        width: 500px;
+        height: 400px;
     }
 
     .row {
