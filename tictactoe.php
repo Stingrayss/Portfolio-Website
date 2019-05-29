@@ -11,16 +11,16 @@
 <body>
 	<ul class="nav">
 		<li>
-			<a class="logo" href="index.html"><img alt="Logo" src="images/Stingray%20Logo.png"></a>
+			<a class="logo" href="index.php"><img alt="Logo" src="images/Stingray%20Logo.png"></a>
 		</li>
 		<li>
-			<a href="index.html" id="notactive" class="notactive">Home</a>
+			<a href="index.php" id="notactive" class="notactive">Home</a>
 		</li>
 		<li>
-			<a href="aboutme.html" id="notactive2" class="notactive2">About me</a>
+			<a href="aboutme.php" id="notactive2" class="notactive2">About me</a>
 		</li>
 		<li>
-			<a href="portfolio.html" id="active">Portfolio</a>
+			<a href="portfolio.php" id="active">Portfolio</a>
 		</li>
 	</ul>
 	

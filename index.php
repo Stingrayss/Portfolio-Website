@@ -10,10 +10,10 @@
 
 <body>
     <ul class="nav">
-        <li><a href="index.html" class="logo"><img src="images/Stingray%20Logo.png" alt="Logo"></a></li>
-        <li><a href="index.html" id="active" class="active">Home</a></li>
-        <li><a href="aboutme.html" id="notactive" class="notactive">About me</a></li>
-        <li><a href="portfolio.html" id="notactive2" class="notactive2">Portfolio</a></li>
+        <li><a href="index.php" class="logo"><img src="images/Stingray%20Logo.png" alt="Logo"></a></li>
+        <li><a href="index.php" id="active" class="active">Home</a></li>
+        <li><a href="aboutme.php" id="notactive" class="notactive">About me</a></li>
+        <li><a href="portfolio.php" id="notactive2" class="notactive2">Portfolio</a></li>
     </ul>
     <div class="header">
         <h1>Cade Duncan</h1>
@@ -22,12 +22,12 @@
 
     <div class="homecontent">
         <h2>Let's Get Started!</h2>
-        <a href="aboutme.html">
+        <a href="aboutme.php">
             <div class="box1">
                 <h3 style="font-weight: 100;">About Me</h3>
             </div>
         </a>
-        <a href="portfolio.html">
+        <a href="portfolio.php">
             <div class="box2">
                 <h3 style="font-weight: 100;">Portfolio</h3>
             </div>
