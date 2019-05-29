@@ -14,10 +14,10 @@
 			<a class="logo" href="index.html"><img alt="Logo" src="images/Stingray%20Logo.png"></a>
 		</li>
 		<li>
-			<a href="index.html" id="notactive">Home</a>
+			<a href="index.html" id="notactive" class="notactive">Home</a>
 		</li>
 		<li>
-			<a href="aboutme.html" id="notactive2">About me</a>
+			<a href="aboutme.html" id="notactive2" class="notactive2">About me</a>
 		</li>
 		<li>
 			<a href="portfolio.html" id="active">Portfolio</a>
@@ -35,14 +35,31 @@
 	        </div>
 	    </div>
 	</div>
-	
-	<div class="detailedpicture">
-	    
-	    <video width="1280" height="720" controls>
-	        <source src="images/tictactoe.mp4" type="video/mp4">
-	    </video>
-	    
-	</div>
+	<br><br><br><br><br>    
+	<table>
+    <tr>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+    </tr>    
+    <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+    </tr>    
+    <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+    </tr>
+ </table>
+ <br>
+ <div id="winner"><div id="text"></div></div>
+ <br>
+ <div id="button">
+     <button onclick="startGame()" class="tttbtn">Replay</button>
+     <br><br><br><br>
+ </div>
 	
 <footer>
 		<br>

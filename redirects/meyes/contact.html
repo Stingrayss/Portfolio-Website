@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link href="css/css.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="favicon.ico" rel="icon" type="text/css">
+</head>
+<body class="body" style="background-color: gray">
+	<nav class="top" id="myTopnav">
+		<a class="logo" href="index.html"><img alt="logo" src="Images/harold.png"></a>
+		<div class="mid">
+			<a class="nav" href="index.html">Home</a> <a class="nav" href="ourgoal.html">Our Goal</a> <a class="nav" href="about.html">About Us</a> <a class="nav" href="triumphs.html">Triumphs</a>
+		</div>
+		<div class="end">
+			<a class="nav" href="contact.html" style="text-decoration: underline">Contact Us</a>
+		</div><a class="icon" href="javascript:void(0);" onclick="myFunction()" style="font-size:20px;">&#9776;</a>
+	</nav>
+	<section>
+		<h1 class="cheader">Contact Us</h1>
+	</section>
+	<div class="contactp">
+		<div class="headers">
+			<h2 class="reach">Reach out to us!</h2>
+			<h2 class="info">Our Info</h2>
+		</div>
+		<div class="text">
+			<p class="cdes">Have a question about Meyes? Want to leave some feedback? Send us a comment and we'll respond as soon as possible or check out our contact information below!</p>
+			<div class="contact">
+				<br>
+				<br>
+				<p class="five"><img alt="email" src="Images/envelope.png" style="width: 10%; height: 10%"> &nbsp;infoexample@gmail.com</p><br>
+				<br>
+				<p class="five"><img alt="phone number" src="Images/telephone.png" style="width: 10%; height: 10%"> &nbsp;(012) 345- 6789</p><br>
+				<br>
+				<p class="five"><img alt="address" src="Images/home.png" style="width: 10%; height: 10%"> &nbsp;2555 Clovis Avenue, Clovis CA 93612</p><br>
+				<br>
+				<h2 class="visit">Visit Us</h2><br>
+				<div class="img">
+					<a class="img1" href="https://www.facebook.com/" target="_blank"><img alt="facebook" src="images/facebook.png"></a> <a class="img2" href="https://www.twitter.com/" target="_blank"><img alt="twitter" src="images/twitter.png"></a> <a class="img3" href="https://www.instagram.com/" target="_blank"><img alt="instagram" src="images/instagram.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<form>
+				<input name="firstname" placeholder="Your name.." type="text"> <input name="email" placeholder="Your email.." type="text"> 
+				<textarea id="comment" name="comment" placeholder="Write something.." style="height: 250px;"></textarea> <input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+	<script>
+	           function myFunction() {
+	 var x = document.getElementById("myTopnav");
+	 if (x.className === "top") {
+	   x.className += " responsive";
+	 } else {
+	   x.className = "top";
+	 }
+	}
+	</script>
+</body>
+</html>

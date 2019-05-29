@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link href="css/css.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="favicon.ico" rel="icon" type="text/css">
+</head>
+<body>
+	<nav class="top" id="myTopnav">
+		<a class="logo" href="index.html"><img alt="logo" src="Images/harold.png"></a>
+		<div class="mid">
+			<a class="nav" href="index.html">Home</a> <a class="nav" href="ourgoal.html">Our Goal</a> <a class="nav" href="about.html">About Us</a> <a class="nav" href="triumphs.html" style="text-decoration: underline">Triumphs</a>
+		</div>
+		<div class="end">
+			<a class="nav" href="contact.html">Contact Us</a>
+		</div><a class="icon" href="javascript:void(0);" onclick="myFunction()" style="font-size:20px;">&#9776;</a>
+	</nav>
+	<div id="page">
+		<section class="one">
+			<h1>Triumphs</h1><span class="next"></span>
+		</section>
+		<section class="two">
+			<div class="text2">
+				<div class="mission">
+					<h3 style="text-decoration: underline; text-decoration-color: dodgerblue;">Challenges</h3>
+					<p>Here are some of the challenges faced by Meyes:</p>
+					<ul>
+						<li>Technology not working in low light situations</li>
+						<li>Technology was prone to giving inaccurate scans or movements</li>
+					</ul>
+					<p>Since this is a webcam it requires the room to be lit. If it isn't it becomes harder for it to make accurate movements since it can't see your eyes. Despite the challenges we believe that the innovation's triumphs would outshine the downsides of it. The user would be able to access all the information more independently and certainly more easily than before.<br></p>
+				</div><!--Target Market :)-->
+				<div class="helping">
+					<p></p>
+					<h3 style="text-decoration: underline; text-decoration-color: dodgerblue;">Triumphs</h3>
+					<p>We would like our product to help as many people as possible in the future and to be able to think out an assistive technology like this is an achievement in itself. We would like to thank you for visiting our website and taking time to read about our innovation.</p>
+				</div>
+			</div>
+			<figure>
+				<img alt="capal tunnel picture" class="carpal" src="Images/prototype.jpg">
+				<figcaption style="font-size: .68em; font-style:italic; width: 52%; margin: auto;">
+					<b>http://www.brain-intelligence.cn/en/?dt_portfolio=eye-tracking</b>
+				</figcaption>
+			</figure>
+		</section>
+	</div>
+	<footer>
+		<br>
+		<div class="footerimg">
+			<a href="https://www.facebook.com/" target="_blank"><img alt="facebook" src="images/facebook.png"></a> <a href="https://www.twitter.com/" target="_blank"><img alt="twitter" src="images/twitter.png"></a> <a href="https://www.instagram.com/" target="_blank"><img alt="instagram" src="images/instagram.png"></a>
+		</div><br>
+		<hr style="width: 10%;">
+		<div class="footerheaders">
+			<h3 class="meyesh">Sources</h3>
+			<h3 class="learn">Learn</h3>
+			<h3 class="contacth">Contact Us</h3>
+		</div>
+		<div class="footercontent">
+			<p class="MEYES">Center for Advanced Research and Techonlogy, Web Application Development.<br>
+			<br>
+			Made by Cade Duncan and Genesis Aguilar.<br></p>
+			<nav class="footernav">
+				<a class="nav3" href="index.html">&gt; Home</a> <a class="nav3" href="ourgoal.html">&gt; Our Goal</a> <a class="nav3" href="about.html">&gt; About Us</a> <a class="nav3" href="triumphs.html">&gt; Triumphs</a> <a class="nav3" href="contact.html">&gt; Contact Us</a>
+			</nav>
+			<div class="contact">
+				<p class="five"><img alt="email" src="Images/envelope.png" style="width: 08%; height: 08%"> &nbsp;infoexample@gmail.com</p>
+				<p class="five"><img alt="phone number" src="Images/telephone.png" style="width: 08%; height: 08%"> &nbsp;(012) 345- 6789</p>
+				<p class="five"><img alt="address" src="Images/home.png" style="width: 08%; height: 08%"> &nbsp;2555 Clovis Avenue, Clovis CA 93612</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+	       var page = document.getElementById('page');
+	       var sections = page.getElementsByTagName('section');
+	       // This transition can be defined in the CSS if preferred.
+	       var transition = 'top .8s cubic-bezier(0.77, 0, 0.175, 1)';
+	       page.style.transition = transition;
+	       page.onclick = slideDown;
+	       
+	       function slideDown(e) {
+	       
+	         // Delegate.
+	         if (e.target.className != 'next') {
+	           return;
+	         }
+	         
+	         // Prevent firing simultaneously.
+	         page.onclick = '';
+	         self = e.target.parentNode;
+	         var offset = self.getBoundingClientRect();
+	         var scroll = self.offsetTop;
+	       
+	         // CSS Transition slide.
+	         page.style.top = (-offset.height-offset.top) + 'px';
+	       
+	         setTimeout(function () {
+	           // Reposition the real scrollbar.
+	           page.style.transition = 'none';
+	           page.style.top = '';
+	           window.scrollTo(0, offset.height+scroll);
+	           page.style.transition = transition;
+	           // Reattach event.
+	           page.onclick = slideDown;
+	           
+	           // This timeout length should match the CSS animation time (.8s).
+	         }, 800);
+	       }
+	       function myFunction() {
+	 var x = document.getElementById("myTopnav");
+	 if (x.className === "top") {
+	   x.className += " responsive";
+	 } else {
+	   x.className = "top";
+	 }
+	}
+	</script>
+</body>
+</html>

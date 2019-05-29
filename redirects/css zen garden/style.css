@@ -1,0 +1,281 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+    background-color: #daede2;
+	margin: 25px 50px;
+	padding: 0;
+	}
+body { 
+	font: 120% verdana, sans-serif;
+    background-color: #77c4d3;
+	line-height: 1.88889; 
+	margin: 0; 
+	padding: 0;
+    line-height: 1.59em;
+    box-shadow: 1px 0px 20px 6px rgba(0,0,0,1);
+	}
+p { 
+	margin-right: -23%;
+	text-align: justify;
+	}
+h1 {
+    font-size: 91px;
+}
+h2 {
+    display: block;
+    color: palegreen;
+    font-size: 22px;
+    font-style: italic;
+}
+h3 { 
+	font: italic normal 2em georgia, sans-serif;
+	letter-spacing: 2px; 
+	margin-bottom: 10px; 
+	color: black;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: lightpink;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: mintcream;
+	}
+abbr {
+	border-bottom: none;
+	}
+footer {
+    width: 100%;
+    margin-right: -25%;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    color: cyan;
+    font-size: 1.0em;
+    }
+header {
+    margin: 0 auto;
+    max-width: 1040px;
+    position: relative;
+    text-align: center;
+    top: -10px;
+    width: 100%;
+    z-index: 1;
+    animation: mymove 4s;
+    text-shadow: 0px 0px 40px rgba(0,0,0,1);
+}
+@keyframes mymove {
+    from {top: -200px;}
+    to {top: -10px;}
+}
+@keyframes mymoves {
+    from {left: -1000px;}
+    to {left: 0px;}
+}
+@keyframes movee {
+    from {right: -1000px;}
+    to {right: 0px;}
+}
+header h1 {
+    border-top: 10px solid #77c4d3;
+    color: aquamarine;
+    display: inline-block;
+    min-height: 70px;
+    margin: 70px auto 0;
+    padding: 0 10px;
+    z-index: 2;
+    text-shadow: 1px 0px 40px rgba(0,0,0,1);
+}
+header h1:after {
+    background-color: red;
+    content: '';
+    height: 3px;
+    left: 0;
+    margin-top: -3px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+header h2 {
+    text-align: right;
+    max-width: 800px;
+    margin: -1px 120px;
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+footer { 
+	text-align: center; 
+    display: block;
+    width: 4%;
+    margin-left: 70em;
+    margin-top: -35em;
+    line-height: 80px;
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+	}
+footer a:link, footer a:visited { 
+	margin-right: 50px;
+	}
+* {
+    box-sizing: border-box;
+}
+/* specific divs */  
+.intro {
+	min-width: 470px;
+	width: 100%;
+	}
+.summary:after {
+    border: 1px solid #dd3b2a;
+    content: '';
+    display: block;
+    margin-top: 6px;
+    height: 0px;
+    left: 45%;
+    position: absolute;
+    width: 220px;
+}
+.summary {
+	clear: both; 
+    padding-bottom: 1em;
+	}
+.summary p {
+	font: italic 1.1em/2.2 georgia; 
+	text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+	}
+.preamble {
+    background-color: lightsteelblue;
+    display: block;
+    position: relative;
+	clear: right; 
+    padding: .1% 10% 1% 12%;
+    margin-top: 10px;
+    margin-left: -9%;
+    margin-bottom: -1%;
+    width: 59%;
+    box-shadow: 1px 1px 3px 5px rgba(0,0,0,1);
+    animation: mymoves 5s;
+	}
+.explanation {
+    display: block;
+    position: relative;
+    background-color: skyblue;
+    padding: .1% 21% 1% 2%;
+    margin-left:53%;
+    margin-bottom: -1%;
+    width:49.8%;
+    box-shadow: 1px 1px 3px 5px rgba(0,0,0,1);
+    animation: movee 5s;
+}
+.participation {
+    background-color: mediumpurple;
+    position: relative;
+    display: block;
+    padding: .1% 10% 1% 12%;
+    margin-left: -9%;
+    margin-bottom: -1%;
+    width: 59%;
+    animation: mymoves 5s;
+    box-shadow: 1px 1px 3px 5px rgba(0,0,0,1);
+	}
+.benefits {
+    display: block;
+    position: relative;
+    background-color: darkcyan;
+    padding: .1% 21% 1% 2%;
+    margin-left:53%;
+    margin-bottom: -1%;
+    width:49.8%;
+    box-shadow: 1px 1px 3px 4px rgba(0,0,0,1);
+    animation: movee 5s;
+}
+.requirements {
+    background-color: crimson;
+    display: block;
+    position: relative; 
+    padding: .1% 10% 1% 12%;
+    margin-left: -9%;
+    margin-bottom: -1.0%;
+    width: 59%;
+    box-shadow: 1px .5px 3px 6px rgba(0,0,0,1);
+    animation: mymoves 5s;
+}
+.select {
+    margin-left: 28.5em;
+    margin-top: -64.2em;
+    color:white;
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+}
+.design-name {
+    margin-left: 57em;
+    line-height: 34px;
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+}
+.designer-name {
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+}
+.archives {
+    margin-bottom: 25px;
+    color: white;
+}
+.resources {
+    margin-top: 36.2em;
+    text-align: center;
+    color: white;
+}
+.design-archives {
+    margin-left: 64em;
+    margin-top: 38.5em;
+    line-height: 70px;
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+}
+.view-css {
+    float: left;
+    margin-right: 83px;
+    margin-left: 100px;
+}
+.css-resources {
+    float: left;
+    margin-right: 83px;
+    margin-left: 83px;
+}
+.zen-faq {
+    float: left;
+    margin-right: 83px;
+    margin-left: 83px;
+}
+.zen-submit {
+    float: left;
+    margin-right: 170px;
+    margin-left: 83px;
+}
+.zen-resources {
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 30px rgba(0,0,0,1);
+}
+.requirements:after {
+    border: 1px solid #dd3b2a;
+    content: '';
+    display: block;
+    margin-top: 49px;
+    height: 0px;
+    left: 89.2%;
+    position: absolute;
+    width: 220px;
+}

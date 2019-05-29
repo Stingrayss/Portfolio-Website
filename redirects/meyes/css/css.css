@@ -1,0 +1,566 @@
+/* selectors */
+
+body {
+	margin: auto;
+	overflow-x: hidden;
+	font-family: 'muli', sans-serif
+}
+h1 {
+	font-size: 10em;
+	margin-top: -25px;
+	text-shadow: 25px 25px 25px dimgrey;
+}
+h2 {
+	font-size: 4em;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+nav {
+	position: absolute;
+	z-index: 1;
+}
+section {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+span {
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	margin-left: -36px;
+	cursor: pointer;
+	font-size: 400%;
+}
+span:after {
+	content: '▼';
+	-webkit-animation: bounce .5s ease infinite alternate;
+	animation: bounce .5s ease infinite alternate;
+}
+footer {
+	background-color: #157CA6;
+	font-size: 1.1em;
+	color: black;
+}
+h3 {
+	font-size: 2em;
+}
+p>a {
+	color: black;
+}
+p>a:hover {
+	color: darkgrey;
+}
+/* classes */
+
+.footerheaders {
+	display: flex;
+	justify-content: space-around;
+	margin-top: -20px;
+}
+.footercontent {
+	display: flex;
+	justify-content: space-around;
+	margin-top: -20px;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	margin-top: -15px;
+	vertical-align: middle
+}
+.contacth {
+	width: 27%
+}
+.logo {
+	font-size: 4em;
+	text-decoration: none;
+	color: dodgerblue;
+	padding-left: 40px;
+	font-family: monospace;
+	height: 1.3em;
+	padding-right: 1em;
+}
+.top {
+	position: fixed;
+	background: black;
+	box-shadow: 0px 5px 5px black;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 5px;
+}
+.learn {
+	display: flex;
+	justify-content: space-around;
+}
+.contact {
+	display: flex;
+}
+.MEYES {
+	width: 25%;
+	text-align: center;
+}
+.meyesh {
+	width: 19%;
+	padding-left: 140px;
+}
+.nav {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: dodgerblue;
+	padding: 40px;
+}
+.nav2 {
+	font-size: 1.5em;
+	text-decoration: none;
+	color: dodgerblue;
+	padding-top: 50px;
+}
+.nav3 {
+	text-decoration: none;
+	color: black;
+}
+.middle {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.five {
+	display: flex;
+	align-items: center;
+}
+.end {}
+.nav:hover {
+	text-decoration: underline;
+}
+.nav2:hover {
+	text-decoration: underline;
+}
+.nav3:hover {
+	text-decoration: underline;
+}
+.footerimg {
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+	margin: auto;
+}
+.one {
+	background-color: grey;
+}
+.two {
+	background-color: dimgrey;
+	height: 20vh;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	box-shadow: 2px 2px 25px 25px #555 inset;
+}
+.footernav {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.8em
+}
+.top .icon {
+	display: none;
+}
+/* IDs */
+
+#page {
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+/* animation */
+
+@-webkit-keyframes bounce {
+	100% {
+		margin-left: -20px;
+	}
+}
+@keyframes bounce {
+	100% {
+		margin-left: -20px;
+	}
+}
+/* Content Pages */
+
+.mission {
+	width: 95%;
+}
+.helping {
+	width: 95%;
+}
+.text2 {
+	width: 50%;
+	padding-bottom: 1em;
+}
+.carpal {
+	margin-top: 1%;
+	border: 1px solid black;
+}
+.mission2 {
+	width: 95%;
+}
+.helping2 {
+	width: 95%;
+}
+.text3 {
+	width: 50%;
+	padding-bottom: 1em;
+}
+.carpal2 {
+	margin-top: 1%;
+	border: 1px solid black;
+}
+/* Contact Page */
+
+.cheader {
+	margin-top: -23%;
+	text-shadow: 25px 25px 25px dimgrey;
+}
+.reach {
+	width: 60%;
+	padding-left: 7%;
+}
+.text {
+	display: flex;
+	justify-content: space-around;
+	height: 12em;
+}
+.cdes {
+	margin: 0;
+	width: 30%;
+}
+.headers {
+	display: flex;
+	margin-top: -34%;
+}
+form {
+	width: 45%;
+}
+.visit {
+	margin: 0;
+	width: 100%;
+	margin-left: -22%;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	padding-left: 0px;
+	width: 45%;
+	margin: 0;
+	align-items: center;
+	margin-top: -7%;
+}
+.img {
+	display: flex;
+	justify-content: space-between;
+	width: 90%
+}
+input[type=text], select, textarea {
+	width: 150%;
+	padding: 12px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-sizing: border-box;
+	resize: none;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+input[type=submit] {
+	background-color: royalblue;
+	color: ghostwhite;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-bottom: 12px;
+}
+input[type=submit]:hover {
+	background-color: steelblue;
+}
+.top {
+	overflow: hidden;
+	background-color: #333;
+}
+/* media queries */
+
+@media screen and (max-width: 1523px) {
+	.twoo {
+		font-size: 3em;
+	}
+	.nav2 {
+		font-size: 1em
+	}
+	h1 {
+		font-size: 90pt;
+	}
+	h2 {
+		font-size: 40pt;
+	}
+.mission {
+	width: 180%;
+}
+.helping {
+	width: 180%;
+}
+.text2 {
+	width: 25%;
+    padding-right: 20%;
+    padding-left: 5%;
+}
+.carpal {
+    width: 100%;
+}
+    .two {
+        font-size: .8em;
+        height: 350px;
+    }
+.mission2 {
+	width: 180%;
+}
+.helping2 {
+	width: 180%;
+}
+.text3 {
+	width: 25%;
+    padding-right: 20%;
+    padding-left: 5%;
+}
+.carpal2 {
+    width: 100%;
+}
+    .two {
+        font-size: .8em;
+        height: 350px;
+    }
+    figcaption {
+        width: 70%;
+    }
+    .no {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1105px) {
+	span {
+		left: 55%;
+	}
+	.nav {
+		display: none;
+	}
+	.footerimg {
+		width: 40%;
+	}
+	.top a.icon {
+		display: block;
+		padding: 12px 26px;
+		color: dodgerblue;
+		text-decoration: none;
+	}
+	.top a:hover:not(.logo) {
+		background-color: #555;
+	}
+	.twoo {
+		font-size: 1.8em;
+	}
+	.top.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.top.responsive a {
+		text-align: center;
+		display: block;
+		border: 1px solid black;
+		height: 1.4em;
+	}
+	.top.responsive {
+		display: block;
+		position: fixed;
+		z-index: 2;
+	}
+	.text {
+		height: 10em;
+	}
+	.cheader {
+		font-size: 8em;
+		margin-top: -45%;
+	}
+	.contactp {
+		margin-top: -60%;
+	}
+	.reach {
+		font-size: 3em
+	}
+	.visit {
+		font-size: 3em;
+	}
+	.info {
+		font-size: 3em;
+	}
+	.body {
+
+	}
+	.img {
+		width: 17em;
+	}
+    .meyesh, .learn, .contacth {
+        width: auto
+    }
+    .meyesh {
+        margin-left: -15%;
+    }
+    .MEYES {
+    margin-right: 40%;    
+    }
+.mission {
+	width: 280%;
+}
+.helping {
+	width: 280%;
+}
+.text2 {
+	width: 40%;
+    padding-right: 40%;
+    padding-left: 5%;
+}
+.carpal {
+    width: 100%;
+}.mission2 {
+	width: 200%;
+}
+.helping2 {
+	width: 200%;
+}
+.text3 {
+	width: 30%;
+    padding-right: 30%;
+    padding-left: 25%;
+}
+.carpal2 {
+    width: 70%;
+}
+    .two {
+        font-size: .70em;
+        height: 0%;
+    }
+    .no {
+        text-align: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 680px) {
+	span {
+		top: 40%;
+	}
+	.footerimg {
+		width: 50%;
+		margin: auto;
+	}
+	.footerheaders {
+		font-size: 13pt;
+	}
+	.one {
+		font-size: 50%;
+	}
+	h1 {
+		font-size: 58pt;
+		height: 40vh;
+	}
+	h2 {
+		font-size: 25pt;
+	}
+	.cheader {
+		font-size: 5em;
+	}
+	.contactp {
+		font-size: .8em;
+		margin-top: -110%;
+	}
+	.reach {
+		font-size: 2.4em;
+	}
+	.info {
+		font-size: 2.4em;
+	}
+	.visit {
+		font-size: 2.4em;
+	}
+	.text {
+		height: 13em;
+		padding-top: 1em;
+	}
+	.img {
+		display: flex;
+		flex-direction: column;
+		line-height: 7em;
+		width: 50%;
+	}
+	.footerheaders {
+        font-size: 12pt;
+    }
+    .meyesh, .learn, .contacth {
+        width: auto;
+    }
+    .meyesh {
+        margin-left: -25%
+    }
+    .contacth {
+        margin-right: -5%
+    }
+    .MEYES {
+    margin-right: 40%;    
+    }
+    .mission {
+	width: 230%;
+}
+.helping {
+	width: 230%;
+}
+.text2 {
+	width: 65%;
+    padding-right: 25%;
+    padding-left: 10%;
+}
+.carpal {
+    width: 100%;
+    margin: 0;
+}
+.two {
+        font-size: .65em;
+        height: 65vh;
+    }    
+.mission2 {
+	width: 230%;
+}
+.helping2 {
+	width: 230%;
+}
+.text3 {
+	width: 100%;
+    padding-right: 5%;
+    padding-left: 20%;
+    margin-top: 60%;
+}
+.carpal2 {
+    width: 100%;
+    margin-top: -80%;
+    margin-left: -70%;
+}
+    .two {
+        font-size: .65em;
+        height: 65vh;
+    }
+    .no {
+        margin-left: -70%;
+        text-align: center;
+        width: 100%;
+    }
+}

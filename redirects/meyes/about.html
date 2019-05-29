@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link href="css/css.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="favicon.ico" rel="icon" type="text/css">
+</head>
+<body>
+	<nav class="top" id="myTopnav">
+		<a class="logo" href="index.html"><img alt="logo" src="Images/harold.png"></a>
+		<div class="mid">
+			<a class="nav" href="index.html">Home</a> <a class="nav" href="ourgoal.html">Our Goal</a> <a class="nav" href="about.html" style="text-decoration: underline">About Us</a> <a class="nav" href="triumphs.html">Triumphs</a>
+		</div>
+		<div class="end">
+			<a class="nav" href="contact.html">Contact Us</a>
+		</div><a class="icon" href="javascript:void(0);" onclick="myFunction()" style="font-size:20px;">&#9776;</a>
+	</nav>
+	<div id="page">
+		<section class="one">
+			<h1>About Us</h1><span class="next"></span>
+		</section>
+		<section class="two">
+			<div class="text3">
+				<div class="mission2">
+					<h3 style="text-decoration: underline; text-decoration-color: dodgerblue;">Description of Meyes</h3>
+					<p>Meyes is like a computer mouse, but instead of having a mouse it's a webcam that tracks the movement of your eyes to replicate the functions of a computer mouse on the screen. It moves to where the eyes look. Voice command technology would be used for the user to select things in their device.</p>
+					<p>It is important for people to understand that there is lots of research done on eye-tracking technology and existing products. <!-- talking about similar technologies-->
+					 Tobii and their eye-tracking technology is one of the products we used as inspiration for our technology. The difference between our product and theirs is that Tobii is used as an aid for gaming. Their website markets the eye tracker as a way to improve a user's experience when playing video games. Our innovation on the other hand, is meant to help the user be able to use the computer in general, not just gaming. If you would like to read more about their technology and their research you can check their website at:<br>
+					<a href="https://tobiigaming.com/"><b>https://tobiigaming.com/</b></a> and <a href="https://www.tobii.com/tech/technology/what-is-eye-tracking/"><b>https://www.tobii.com/tech/technology/what-is-eye-tracking/.</b></a><br></p>
+				</div><!--Target Market :)-->
+                <div class="helping2">
+					<p></p>
+					<h3 style="text-decoration: underline; text-decoration-color: dodgerblue;">Inspiration</h3>
+					<p>Other similar technology was made by the Not Impossible foundation. It also uses eye-tracking technology and it was made especially for Don Moir, a man who was paralyzed and lost his ability to speak. The innovation gave him a way to speak again by letting him pick letters with his eyes and the computer reads whatever he types in the middle of the screen out loud. This application's purpose is to restore his ability to communicate with others. There is plenty of differences between our innovations but we certainly took some inspiration from this innovation. To read more about Don's voice and Not Impossible you can at: <a href="https://www.notimpossible.com/#whatwedo"><b>https://www.notimpossible.com/#whatwedo</b></a></p>
+				</div>
+			</div>
+			<figure>
+				<img alt="capal tunnel picture" class="carpal2" src="Images/meanman.jpg">
+				<figcaption style="font-size: .68em; font-style:italic;" class="no">
+					<b>https://st2.depositphotos.com/6913910/9871/v/600/depositphotos_98716516-stock-video-old-man-using-a-persona.jpg</b>
+				</figcaption>
+			</figure>
+		</section>
+	</div>
+	<footer>
+		<br>
+		<div class="footerimg">
+			<a href="https://www.facebook.com/" target="_blank"><img alt="facebook" src="images/facebook.png"></a> <a href="https://www.twitter.com/" target="_blank"><img alt="twitter" src="images/twitter.png"></a> <a href="https://www.instagram.com/" target="_blank"><img alt="instagram" src="images/instagram.png"></a>
+		</div><br>
+		<hr style="width: 10%;">
+		<div class="footerheaders">
+			<h3 class="meyesh">Sources</h3>
+			<h3 class="learn">Learn</h3>
+			<h3 class="contacth">Contact Us</h3>
+		</div>
+		<div class="footercontent">
+			<p class="MEYES">Center for Advanced Research and Techonlogy, Web Application Development.<br>
+			<br>
+			Made by Cade Duncan and Genesis Aguilar.<br></p>
+			<nav class="footernav">
+				<a class="nav3" href="index.html">&gt; Home</a> <a class="nav3" href="ourgoal.html">&gt; Our Goal</a> <a class="nav3" href="about.html">&gt; About Us</a> <a class="nav3" href="triumphs.html">&gt; Triumphs</a> <a class="nav3" href="contact.html">&gt; Contact Us</a>
+			</nav>
+			<div class="contact">
+				<p class="five"><img alt="email" src="Images/envelope.png" style="width: 08%; height: 08%"> &nbsp;infoexample@gmail.com</p>
+				<p class="five"><img alt="phone number" src="Images/telephone.png" style="width: 08%; height: 08%"> &nbsp;(012) 345- 6789</p>
+				<p class="five"><img alt="address" src="Images/home.png" style="width: 08%; height: 08%"> &nbsp;2555 Clovis Avenue, Clovis CA 93612</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+	       var page = document.getElementById('page');
+	       var sections = page.getElementsByTagName('section');
+	       // This transition can be defined in the CSS if preferred.
+	       var transition = 'top .8s cubic-bezier(0.77, 0, 0.175, 1)';
+	       page.style.transition = transition;
+	       page.onclick = slideDown;
+	       
+	       function slideDown(e) {
+	       
+	         // Delegate.
+	         if (e.target.className != 'next') {
+	           return;
+	         }
+	         
+	         // Prevent firing simultaneously.
+	         page.onclick = '';
+	         self = e.target.parentNode;
+	         var offset = self.getBoundingClientRect();
+	         var scroll = self.offsetTop;
+	       
+	         // CSS Transition slide.
+	         page.style.top = (-offset.height-offset.top) + 'px';
+	       
+	         setTimeout(function () {
+	           // Reposition the real scrollbar.
+	           page.style.transition = 'none';
+	           page.style.top = '';
+	           window.scrollTo(0, offset.height+scroll);
+	           page.style.transition = transition;
+	           // Reattach event.
+	           page.onclick = slideDown;
+	           
+	           // This timeout length should match the CSS animation time (.8s).
+	         }, 800);
+	       }
+	       function myFunction() {
+	 var x = document.getElementById("myTopnav");
+	 if (x.className === "top") {
+	   x.className += " responsive";
+	 } else {
+	   x.className = "top";
+	 }
+	}
+	</script>
+</body>
+</html>
