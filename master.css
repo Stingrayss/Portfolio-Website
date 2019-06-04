@@ -147,13 +147,17 @@ h1 {
     text-shadow: 1px 1px 3px black;
     font-weight: 400
 }
-
+.home {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-image: url(images/patterns/leaves-pattern.png);
+}
 .homecontent {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    background-image: url(images/patterns/leaves-pattern.png);
     flex-wrap: wrap;
     z-index: 1;
 }
@@ -205,7 +209,30 @@ h1 {
     text-align: center;
     font-weight: 500;
 }
-
+.youtubebtn {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    background: none;
+    border: 2px solid #272727;
+    padding: 16px 32px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+}
+.youtubebtn a {
+    color: black;
+}
+.youtubebtn:hover {
+    background: #272727;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+.youtubebtn:hover a{
+    color: white;
+    transition: ease 0.3s;
+}
 /* About Me */
 
 .secone {
@@ -821,6 +848,9 @@ textarea::placeholder {
     .one {
         width: 80%;
     }
+    .youtubebtn {
+        width: 15%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -906,6 +936,9 @@ textarea::placeholder {
     .detailedpicture > video {
         width: 700px;
         height: 600px;
+    }
+    .youtubebtn {
+        width: 25%;
     }
 }
 
@@ -1015,5 +1048,8 @@ textarea::placeholder {
 
     .nav > li:first-child {
         margin-right: 0;
+    }
+    .youtubebtn {
+        width: 30%;
     }
 }
